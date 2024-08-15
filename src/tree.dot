@@ -82,5 +82,8 @@ digraph G {
 		"Space Station 14"           -> "Delta-V" [color = red] // added by: noliuss
 		"Delta-V"                    -> "Einstein Engines (AGPLv3)" // added by: noliuss
 		"Space Station 14"           -> "Frontier Station 14" // added by: noliuss
+		"Space Station 14"           -> "Mining Station 14" // added by: noliuss
+		"Space Station 14"           -> "Ekrixi" // added by: noliuss
+		"Space Station 14"           -> "Blep Station" // added by: noliuss
 	}
 }

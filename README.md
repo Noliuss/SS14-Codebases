@@ -1,7 +1,7 @@
 
 <p align="center">
 	<h2 align="center">
-		Graph tree of <a href="http://www.byond.com/games/Exadv1/SpaceStation13">SS13</a> builds codebases
+		Graph tree of <a href="https://spacestation14.com">SS14</a> builds codebases
 	</h2>
 	<p align="center">
 		Origin:
@@ -63,7 +63,7 @@
 
 ## Description
 
-A [DOT graph](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) of the family tree of [Space Station 13](http://www.byond.com/games/Exadv1/SpaceStation13) builds codebases.
+A [DOT graph](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) of the family tree of [Space Station 14](https://spacestation14.com) builds codebases.
 
 ## Display graph tree
 
