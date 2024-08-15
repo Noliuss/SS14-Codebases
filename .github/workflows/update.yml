@@ -1,0 +1,84 @@
+# This is a basic workflow to help you get started with Actions
+
+name: "CI"
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    types: [ closed ]
+
+    #types: [opened, synchronize, closed]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build_ubuntu:
+    name: Build (Ubuntu)
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      - name: "> Check out current repository"
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ github.token }}
+          path: ${{ github.workspace }}
+
+      - name: "> Check if PR was merged"
+        id: check_merged
+        run: |
+          if [ "${{ github.event.pull_request.merged }}" = "true" ]; then
+            echo "PR was merged"
+            echo "MERGED=true" >> $GITHUB_ENV
+          else
+            echo "PR was not merged"
+            echo "MERGED=false" >> $GITHUB_ENV
+          fi
+
+      - name: "> Install Graphviz"
+        uses: ts-graphviz/setup-graphviz@v1
+        if: env.MERGED == 'true'
+
+      - name: "> Build graph"
+        shell: bash
+        env:
+          target_file_path: ${{ github.workspace }}/scripts
+        run: |
+          echo "Workflow step executed from > $(pwd)";
+          ls;
+          find $(pwd) -type f -iname "*.sh" -exec chmod +x {} \;
+          cd "./scripts/";
+          echo "----------------------------------------";
+          bash -e "./compile.sh";
+        if: env.MERGED == 'true'
+
+      # Conditionally run the following steps only if the PR was merged
+      - name: "> Set up git user"
+        if: env.MERGED == 'true'
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+
+      - name: "> Add changed files"
+        if: env.MERGED == 'true'
+        run: |
+          git add .
+
+      - name: "> Commit changes"
+        if: env.MERGED == 'true'
+        run: |
+          git commit -m "Automated commit of changed files"
+        continue-on-error: true  # Allows the workflow to continue even if there are no changes to commit
+
+      - name: "> Push changes"
+        if: env.MERGED == 'true'
+        run: |
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
