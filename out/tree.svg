@@ -77,6 +77,42 @@
 <path fill="none" stroke="black" d="M115.64,-171.42C128.95,-164.57 144.91,-157.11 160,-152 185.95,-143.2 249.6,-130.57 301.96,-120.93"/>
 <polygon fill="black" stroke="black" points="311.93,-119.1 302.9,-125.33 307.01,-120 302.09,-120.9 302.09,-120.9 302.09,-120.9 307.01,-120 301.28,-116.48 311.93,-119.1 311.93,-119.1"/>
 </g>
+<!-- Mining Station 14 -->
+<g id="node8" class="node">
+<title>Mining Station 14</title>
+<ellipse fill="none" stroke="black" cx="595" cy="-106" rx="94.78" ry="18"/>
+<text text-anchor="middle" x="595" y="-102.3" font-family="Times,serif" font-size="14.00">Mining Station 14</text>
+</g>
+<!-- Space Station 14&#45;&gt;Mining Station 14 -->
+<g id="edge5" class="edge">
+<title>Space Station 14&#45;&gt;Mining Station 14</title>
+<path fill="none" stroke="black" d="M113.94,-171.31C127.47,-164.1 144.08,-156.38 160,-152 302.34,-112.81 344.48,-142.14 491,-124 499.64,-122.93 508.66,-121.67 517.63,-120.33"/>
+<polygon fill="black" stroke="black" points="527.7,-118.78 518.49,-124.75 522.75,-119.54 517.81,-120.3 517.81,-120.3 517.81,-120.3 522.75,-119.54 517.13,-115.85 527.7,-118.78 527.7,-118.78"/>
+</g>
+<!-- Ekrixi -->
+<g id="node9" class="node">
+<title>Ekrixi</title>
+<ellipse fill="none" stroke="black" cx="746" cy="-106" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="746" y="-102.3" font-family="Times,serif" font-size="14.00">Ekrixi</text>
+</g>
+<!-- Space Station 14&#45;&gt;Ekrixi -->
+<g id="edge6" class="edge">
+<title>Space Station 14&#45;&gt;Ekrixi</title>
+<path fill="none" stroke="black" d="M113.16,-171.46C126.81,-164.08 143.73,-156.2 160,-152 392.28,-92.09 463.88,-171.53 699,-124 702.19,-123.36 705.45,-122.53 708.7,-121.6"/>
+<polygon fill="black" stroke="black" points="718.3,-118.54 710.14,-125.87 713.54,-120.06 708.78,-121.58 708.78,-121.58 708.78,-121.58 713.54,-120.06 707.41,-117.29 718.3,-118.54 718.3,-118.54"/>
+</g>
+<!-- Blep Station -->
+<g id="node10" class="node">
+<title>Blep Station</title>
+<ellipse fill="none" stroke="black" cx="871" cy="-106" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="871" y="-102.3" font-family="Times,serif" font-size="14.00">Blep Station</text>
+</g>
+<!-- Space Station 14&#45;&gt;Blep Station -->
+<g id="edge7" class="edge">
+<title>Space Station 14&#45;&gt;Blep Station</title>
+<path fill="none" stroke="black" d="M113.15,-171.4C126.79,-164.01 143.72,-156.13 160,-152 296.48,-117.36 653.37,-142.17 793,-124 799.56,-123.15 806.38,-122.02 813.14,-120.75"/>
+<polygon fill="black" stroke="black" points="822.96,-118.81 814.02,-125.17 818.05,-119.78 813.15,-120.75 813.15,-120.75 813.15,-120.75 818.05,-119.78 812.28,-116.34 822.96,-118.81 822.96,-118.81"/>
+</g>
 <!-- Einstein Engines (AGPLv3) -->
 <g id="node4" class="node">
 <title>Einstein Engines (AGPLv3)</title>
