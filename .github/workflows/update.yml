@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: "CI"
+name: "Autoupdate"
 
 # Controls when the action will run.
 on:
@@ -43,7 +43,7 @@ jobs:
 
       - name: "> Install Graphviz"
         uses: ts-graphviz/setup-graphviz@v1
-        if: env.MERGED == 'true'
+        if: github.event_name == 'push' || env.MERGED == 'true'
 
       - name: "> Build graph"
         shell: bash
@@ -56,28 +56,27 @@ jobs:
           cd "./scripts/";
           echo "----------------------------------------";
           bash -e "./compile.sh";
-        if: env.MERGED == 'true'
+        if: github.event_name == 'push' || env.MERGED == 'true'
 
-      # Conditionally run the following steps only if the PR was merged
       - name: "> Set up git user"
-        if: env.MERGED == 'true'
+        if: github.event_name == 'push' || (env.MERGED == 'true')
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
 
       - name: "> Add changed files"
-        if: env.MERGED == 'true'
+        if: github.event_name == 'push' || (env.MERGED == 'true')
         run: |
           git add .
 
       - name: "> Commit changes"
-        if: env.MERGED == 'true'
+        if: github.event_name == 'push' || (env.MERGED == 'true')
         run: |
           git commit -m "Automated commit of changed files"
-        continue-on-error: true  # Allows the workflow to continue even if there are no changes to commit
+        continue-on-error: true
 
       - name: "> Push changes"
-        if: env.MERGED == 'true'
+        if: github.event_name == 'push' || (env.MERGED == 'true')
         run: |
           git push
         env:
