@@ -57,5 +57,7 @@ A [DOT graph](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) of
 ## For contributors
 
 If you want to add repository to the roadmap, go to <a href="./src/tree.dot/">the tree file</a>, scroll down until you see a list of servers, then add your server like that:
+
 		"Fork's upstream"           -> "Fork's name" // added by: your username
+
 No need to build it, github makes it automatically when your PR gets merged. Please mention what you changed in the description of your PR.
