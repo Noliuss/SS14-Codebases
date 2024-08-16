@@ -78,8 +78,9 @@ digraph G {
 		"Einstein Engines (AGPLv3)" [shape = rectangle, color = blue] // added by: noliuss
 
 		/// Edges ///
+		// Use [color = red] to make arrow red
 		"Space Station 14"           -> "Nyanotrasen" // added by: noliuss
-		"Space Station 14"           -> "Delta-V" [color = red] // added by: noliuss
+		"Space Station 14"           -> "Delta-V" // added by: noliuss
 		"Delta-V"                    -> "Einstein Engines (AGPLv3)" // added by: noliuss
 		"Space Station 14"           -> "Frontier Station 14" // added by: noliuss
 		"Space Station 14"           -> "Mining Station 14" // added by: noliuss
