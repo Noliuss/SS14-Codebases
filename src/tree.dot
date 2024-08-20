@@ -79,12 +79,69 @@ digraph G {
 
 		/// Edges ///
 		// Use [color = red] to make arrow red
-		"Space Station 14"           -> "Nyanotrasen" // added by: noliuss
-		"Space Station 14"           -> "Delta-V" // added by: noliuss
-		"Delta-V"                    -> "Einstein Engines (AGPLv3)" // added by: noliuss
-		"Space Station 14"           -> "Frontier Station 14" // added by: noliuss
-		"Space Station 14"           -> "Mining Station 14" // added by: noliuss
-		"Space Station 14"           -> "Ekrixi" // added by: noliuss
-		"Space Station 14"           -> "Blep Station" // added by: noliuss
+		"Corvax"                     -> "Adventure Space"                // added by: noliuss
+		"Corvax"                     -> "Backmen"                        // added by: noliuss
+		"Corvax"                     -> "Bluespace Station"              // added by: noliuss
+		"Corvax"                     -> "Corvax - S.T.A.L.K.E.R."        // added by: noliuss
+		"Corvax"                     -> "Dark Station"                   // added by: noliuss
+		"Corvax"                     -> "Dead Space"                     // added by: noliuss
+		"Corvax"                     -> "Gravity Gate"                   // added by: noliuss
+		"Corvax"                     -> "Lost Paradise"                  // added by: noliuss
+		"Corvax"                     -> "Sirena"                         // added by: noliuss
+		"Corvax"                     -> "Theta"                          // added by: noliuss
+
+		"Delta-V"                    -> "Einstein Engines (AGPLv3)"      // added by: noliuss
+
+		"Einstein Engines (AGPLv3)"  -> "Barotrauma Station 14"          // added by: noliuss
+		"Einstein Engines (AGPLv3)"  -> "Central Command Station"        // added by: noliuss
+		"Einstein Engines (AGPLv3)"  -> "Corvax - Fallout"               // added by: noliuss
+		"Einstein Engines (AGPLv3)"  -> "Deep Station"                   // added by: noliuss
+		"Einstein Engines (AGPLv3)"  -> "Grand Salvation"                // added by: noliuss
+		"Einstein Engines (AGPLv3)"  -> "Nuclear 14"                     // added by: noliuss
+		"Einstein Engines (AGPLv3)"  -> "Parkstation"                    // added by: noliuss
+
+		"Frontier Station 14"        -> "Corvax - Frontier"              // added by: noliuss
+		"Frontier Station 14"        -> "Frontier PT"                    // added by: noliuss
+		"Frontier Station 14"        -> "Hullrot"                        // added by: noliuss
+
+		"Lost Paradise"              -> "Lost Paradise - S.T.A.L.K.E.R." // added by: noliuss
+
+		"Nuclear 14"                 -> "Corvax - Fallout"               // added by: noliuss
+
+		"Parkstation"                -> "Caldera Site"                   // added by: noliuss
+
+		"Space Station 14"           -> "Afterlight: 3149"               // added by: noliuss
+		"Space Station 14"           -> "Apocalypse Station"             // added by: noliuss
+		"Space Station 14"           -> "Blep Station"                   // added by: noliuss
+		"Space Station 14"           -> "Cosmatic Drift"                 // added by: noliuss
+		"Space Station 14"           -> "Corvax"                         // added by: noliuss
+		"Space Station 14"           -> "Crystall Punk 14"               // added by: noliuss
+		"Space Station 14"           -> "Cube Station"                   // added by: noliuss
+		"Space Station 14"           -> "Delta-V"                        // added by: noliuss
+		"Space Station 14"           -> "Earth 3000"                     // added by: noliuss
+		"Space Station 14"           -> "Ekrixi"                         // added by: noliuss
+		"Space Station 14"           -> "Frontier Station 14"            // added by: noliuss
+		"Space Station 14"           -> "Goob Station"                   // added by: noliuss
+		"Space Station 14"           -> "Grey Station"                   // added by: noliuss
+		"Space Station 14"           -> "Imperial Space"                 // added by: noliuss
+		"Space Station 14"           -> "Mining Station 14"              // added by: noliuss
+		"Space Station 14"           -> "Mystic Station"                 // added by: noliuss
+		"Space Station 14"           -> "Nova Luna"                      // added by: noliuss
+		"Space Station 14"           -> "Nyanotrasen"                    // added by: noliuss
+		"Space Station 14"           -> "OnyxBay14"                      // added by: noliuss
+		"Space Station 14"           -> "Pirate Station"                 // added by: noliuss
+		"Space Station 14"           -> "Prim14"                         // added by: noliuss
+		"Space Station 14"           -> "Red Eclipse"                    // added by: noliuss
+		"Space Station 14"           -> "RonStation"                     // added by: noliuss
+		"Space Station 14"           -> "Rouny's Marine Corps"           // added by: noliuss
+		"Space Station 14"           -> "Sich"                           // added by: noliuss
+		"Space Station 14"           -> "SS14SCP (Foundation 14)"        // added by: noliuss
+		"Space Station 14"           -> "SS14-UA"                        // added by: noliuss
+		"Space Station 14"           -> "SS220"                          // added by: noliuss
+		"Space Station 14"           -> "Starshine"                      // added by: noliuss
+		"Space Station 14"           -> "Thanatophobia"                  // added by: noliuss
+		"Space Station 14"           -> "Trieste Port"                   // added by: noliuss
+		"Space Station 14"           -> "Western"                        // added by: noliuss
+
 	}
 }
