@@ -70,7 +70,6 @@ digraph G {
 		label    = "SS14 Codebases Roadmap"
 		labelloc = "top"
 		style    = "dotted"
-		weight = "0.5"
 		//rankdir = "TB"
 		//edge [constraint = true]
 
@@ -80,16 +79,16 @@ digraph G {
 
 		/// Edges ///
 		// Use [color = red] to make arrow red
-		"Corvax"                     -> "Adventure Space"                // added by: noliuss
-		"Corvax"                     -> "Backmen"                        // added by: noliuss
-		"Corvax"                     -> "Bluespace Station"              // added by: noliuss
-		"Corvax"                     -> "Corvax - S.T.A.L.K.E.R."        // added by: noliuss
-		"Corvax"                     -> "Dark Station"                   // added by: noliuss
-		"Corvax"                     -> "Dead Space"                     // added by: noliuss
-		"Corvax"                     -> "Gravity Gate"                   // added by: noliuss
-		"Corvax"                     -> "Lost Paradise"                  // added by: noliuss
-		"Corvax"                     -> "Sirena"                         // added by: noliuss
-		"Corvax"                     -> "Theta"                          // added by: noliuss
+		"Corvax"                     -> "Adventure Space"[weight = "0.5"]                // added by: noliuss
+		"Corvax"                     -> "Backmen"[weight = "0.5"]                        // added by: noliuss
+		"Corvax"                     -> "Bluespace Station"[weight = "0.5"]              // added by: noliuss
+		"Corvax"                     -> "Corvax - S.T.A.L.K.E.R."[weight = "0.5"]        // added by: noliuss
+		"Corvax"                     -> "Dark Station"[weight = "0.5"]                   // added by: noliuss
+		"Corvax"                     -> "Dead Space"[weight = "0.5"]                     // added by: noliuss
+		"Corvax"                     -> "Gravity Gate"[weight = "0.5"]                   // added by: noliuss
+		"Corvax"                     -> "Lost Paradise"[weight = "0.5"]                  // added by: noliuss
+		"Corvax"                     -> "Sirena"[weight = "0.5"]                         // added by: noliuss
+		"Corvax"                     -> "Theta"[weight = "0.5"]                          // added by: noliuss
 
 		"Delta-V"                    -> "Einstein Engines (AGPLv3)"      // added by: noliuss
 
